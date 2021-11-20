@@ -121,14 +121,23 @@ body {
 
 .container {
   margin-top: 7%;
+  display: flex;
+  justify-content: center;
 }
 .container .carousel {
   z-index: 0;
+  max-width: 80%;
+}
+.container .carousel .desta {
+  font-style: italic;
 }
 @media screen and (max-width: 400px) {
   .container .carousel .desta {
     padding-top: 13%;
   }
+}
+.container .carousel .propiedadesCar {
+  border-radius: 20px;
 }
 @media screen and (max-width: 400px) {
   .container {
