@@ -15,7 +15,12 @@
             display: inline;
             max-width: $anchoproductos;
             margin-bottom: 1vw;
-            margin-right: 1vw;    
+            margin-right: 1vw;
+            border-radius: 10px;
+            transition: all 1s;
+            &:hover {
+                transform: scale(1.2);
+            }   
         }
     }
 }
