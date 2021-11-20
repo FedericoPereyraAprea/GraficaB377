@@ -12,8 +12,13 @@
             max-width: 50%;   
         }
     }
-    p {
+    .textoProducto {
         color: $fontColorPrincipal;
+    }
+    .tituloProducto {
+        font-style: italic;
+    }
+    p {
         font-weight: $fontWeight;
         font-size: 22px;
     }
