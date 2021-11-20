@@ -1,0 +1,75 @@
+.container {
+    margin-top: 7%;
+    .carousel {
+        z-index: 0;
+        .desta {
+            @extend %tituloDestacado;
+            @media screen and (max-width: 400px) {
+                padding-top: 13%;   
+            }  
+        } 
+    }
+    @media screen and (max-width: 400px) {
+        @include mediaCarousel(100%, 13%);
+    }
+    @media screen and (min-width: 401px) and (max-width: 800px) {
+        @include mediaCarousel(60%, 15%);
+    }    
+}
+.grid-subida {
+    @include gridSub(grid, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    height: 40vh;
+    align-items: center;
+    div {
+        @include gridSub(grid, repeat (2,auto));
+        row-gap: 10px;
+        justify-items: center;
+        @media screen and (max-width: 400px) {
+            row-gap: 1px;
+        }       
+        .subida {
+            width: 150px;
+            margin-top: 38px;
+            transition: all 1s;
+            &:hover {
+                transform: rotate(360deg) scale(1.5) translateY(-20px); 
+            }
+            @media screen and (max-width: 400px) {
+                width: 90px;    
+            }
+            @media screen and (min-width: 401px) and (max-width: 800px) {
+                width: 100px;
+            }
+        }
+        .formatos {
+            color: nth($colores, 2);
+            font-weight: bold;
+            text-align: center;
+            @media screen and (max-width: 400px) {
+                font-size: 12px;
+                color: nth($colores, 3);
+            }
+        }    
+    }
+    .archivo {
+        color: rgb(231, 231, 222);
+        font-weight: bold;
+        font-size: 25px;
+        text-align: center;
+        @media screen and (max-width: 400px) {
+            margin-top: 72px;
+            font-size: 12px;    
+        }
+        @media screen and (min-width: 401px) and (max-width: 800px) {
+            font-size: 15px;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        height: auto;
+        margin-left: auto;    
+    }
+    @media screen and (min-width: 401px) and (max-width: 800px) {
+       height: auto; 
+    }
+}

@@ -1,0 +1,77 @@
+.container {
+    .desta {
+        @extend %tituloDestacado;
+        @media screen and (max-width: 400px) {
+            padding-top: 10%;   
+        }
+        @media screen and (min-width: 401px) and (max-width: 800px) {
+            padding-top: 50px;
+        }  
+    }
+    .row {
+        div {
+            .infoGrafica {
+                color: $fontColorPrincipal;
+                font-size: 1.3em;
+                text-align: justify;
+                margin-right: 64px;
+                @media screen and (max-width: 400px) {
+                        font-size: 12px;
+                        margin-right: 0px;         
+                }
+            }    
+        }
+        div {
+            .quienesSomos {
+                max-width: $anchoQuienesSomosImg;
+            }
+        }
+    }
+    .nombrePablo {
+        color: $fontColorPrincipal;
+        font-size: 35px;
+        font-style: normal;
+        @media screen and (max-width: 400px) {
+            font-size: 20px;
+            margin-top: 5px;
+        }
+    }    
+    .row {
+        .col {
+            .quienesSomos {
+                max-width: $anchoQuienesSomosImg;         
+            }
+        }
+        .col {
+            .infoPablo {
+                @extend %infoPersonas;   
+            }
+        }
+    }
+    .nombreFede {
+        color: $fontColorPrincipal;
+        font-size: 35px;
+        font-style: normal;
+        text-align: right;
+        margin-top: 15px;
+        margin-right: 64px;
+        @media screen and (max-width: 400px) {
+            font-size: 20px;
+            margin-right: 19px;    
+        }    
+    }
+    .row {
+        .col {
+            .infoFede {
+                @extend %infoPersonas; 
+            }
+        }
+        .col {
+            .quienesSomos, .fotoFede {
+                max-width: $anchoQuienesSomosImg;
+                margin-bottom: 20px; 
+            }
+        }
+    }
+
+}

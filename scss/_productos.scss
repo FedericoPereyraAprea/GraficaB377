@@ -1,0 +1,21 @@
+.containerProductos {
+    margin-top: 7%; 
+       .desta {
+        @extend %tituloDestacado;
+        @media screen and (max-width: 400px) {
+            padding-top: 14%;   
+        }
+        @media screen and (min-width: 401px) and (max-width: 800px) {
+            padding-top: 50px;
+        }  
+    } 
+    .productsContainer {
+        margin-left: 7vw;
+        .tamaño {
+            display: inline;
+            max-width: $anchoproductos;
+            margin-bottom: 1vw;
+            margin-right: 1vw;    
+        }
+    }
+}
