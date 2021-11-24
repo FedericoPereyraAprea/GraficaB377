@@ -25,25 +25,25 @@
   background-color: #43be4d;
 }
 
-.registrarse .desta, .containerContacto .tituloRegistro, .containerContacto .desta, .container .desta, .containerProductos .desta, .container .carousel .desta {
+.registrarse .desta, .containerContacto .tituloRegistro, .containerContacto .desta, .containerSomos .desta, .containerProductos .desta, .container .carousel .desta {
   color: #43be4d;
   display: flex;
   justify-content: center;
   padding-top: 22px;
 }
-.registrarse .desta:hover, .containerContacto .tituloRegistro:hover, .containerContacto .desta:hover, .container .desta:hover, .containerProductos .desta:hover {
+.registrarse .desta:hover, .containerContacto .tituloRegistro:hover, .containerContacto .desta:hover, .containerSomos .desta:hover, .containerProductos .desta:hover, .container .carousel .desta:hover {
   animation: changeColor 4s;
 }
 
-.container .row .col .infoFede, .container .row .col .infoPablo {
+.containerSomos .contFede .divFede .infoFede, .containerSomos .contPablo .divInfoPablo .infoPablo {
   color: #43be4d;
   font-size: 20px;
   text-align: justify;
-  margin-right: 64px;
+  margin-right: 140px;
 }
 @media screen and (max-width: 400px) {
-  .container .row .col .infoFede, .container .row .col .infoPablo {
-    font-size: 12px;
+  .containerSomos .contFede .divFede .infoFede, .containerSomos .contPablo .divInfoPablo .infoPablo {
+    font-size: 11px;
     margin: 0;
   }
 }
@@ -256,60 +256,125 @@ body {
   transform: scale(1.2);
 }
 
+.containerSomos {
+  margin-top: 7%;
+  margin-left: 7%;
+  margin-right: 1%;
+}
 @media screen and (max-width: 400px) {
-  .container .desta {
-    padding-top: 10%;
+  .containerSomos {
+    margin-left: 5%;
+  }
+}
+.containerSomos .desta {
+  padding-bottom: 2%;
+}
+@media screen and (max-width: 400px) {
+  .containerSomos .desta {
+    padding-top: 12%;
   }
 }
 @media screen and (min-width: 401px) and (max-width: 800px) {
-  .container .desta {
+  .containerSomos .desta {
     padding-top: 50px;
   }
 }
-.container .row div .infoGrafica {
+.containerSomos .containerQuienes .quienesSomosDiv .infoGrafica {
   color: #43be4d;
   font-size: 1.3em;
   text-align: justify;
-  margin-right: 64px;
+  margin-right: 17%;
 }
 @media screen and (max-width: 400px) {
-  .container .row div .infoGrafica {
-    font-size: 12px;
-    margin-right: 0px;
+  .containerSomos .containerQuienes .quienesSomosDiv .infoGrafica {
+    display: none;
   }
 }
-.container .row div .quienesSomos {
+@media screen and (min-width: 401px) and (max-width: 800px) {
+  .containerSomos .containerQuienes .quienesSomosDiv .infoGrafica {
+    display: none;
+  }
+}
+.containerSomos .containerQuienes .quienesSomosDiv .infoGraficaDos {
+  color: #43be4d;
+  font-size: 1.3em;
+  text-align: justify;
+  margin-right: 17%;
+}
+@media screen and (max-width: 400px) {
+  .containerSomos .containerQuienes .quienesSomosDiv .infoGraficaDos {
+    font-size: 15px;
+    margin-right: 15px;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 800px) {
+  .containerSomos .containerQuienes .quienesSomosDiv .infoGraficaDos {
+    margin-right: 36px;
+  }
+}
+@media screen and (min-width: 801px) {
+  .containerSomos .containerQuienes .quienesSomosDiv .infoGraficaDos {
+    display: none;
+  }
+}
+.containerSomos .containerQuienes .containerPuerta .quienesSomos {
   max-width: 90%;
 }
-.container .nombrePablo {
+@media screen and (max-width: 400px) {
+  .containerSomos .containerQuienes .containerPuerta .quienesSomos {
+    max-width: 97%;
+  }
+}
+.containerSomos .nombrePablo {
   color: #43be4d;
   font-size: 35px;
   font-style: normal;
 }
 @media screen and (max-width: 400px) {
-  .container .nombrePablo {
+  .containerSomos .nombrePablo {
     font-size: 20px;
     margin-top: 5px;
   }
 }
-.container .row .col .quienesSomos {
+.containerSomos .contPablo .divPablo .quienesSomos {
   max-width: 90%;
 }
-.container .nombreFede {
+@media screen and (max-width: 400px) {
+  .containerSomos .contPablo .divInfoPablo .infoPablo {
+    margin-right: 15px;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 800px) {
+  .containerSomos .contPablo .divInfoPablo .infoPablo {
+    margin-right: 37px;
+  }
+}
+.containerSomos .nombreFede {
   color: #43be4d;
   font-size: 35px;
   font-style: normal;
   text-align: right;
   margin-top: 15px;
-  margin-right: 64px;
+  margin-right: 148px;
 }
 @media screen and (max-width: 400px) {
-  .container .nombreFede {
-    font-size: 20px;
+  .containerSomos .nombreFede {
+    font-size: 15px;
     margin-right: 19px;
   }
 }
-.container .row .col .quienesSomos, .container .row .col .fotoFede {
+@media screen and (min-width: 401px) and (max-width: 800px) {
+  .containerSomos .nombreFede {
+    margin-right: 37px;
+    font-size: 29px;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 800px) {
+  .containerSomos .contFede .divFede .infoFede {
+    margin-right: 37px;
+  }
+}
+.containerSomos .contFede .divInfoFede .quienesSomos, .containerSomos .contFede .divInfoFede .fotoFede {
   max-width: 90%;
   margin-bottom: 20px;
 }
@@ -534,12 +599,6 @@ footer .finalFooter div .mapa:hover {
 }
 @media screen and (max-width: 400px) {
   footer .finalFooter div .mapa {
-    display: flex;
-    justify-content: right;
-    left: 54%;
-    top: -80px;
-    bottom: 10.5em;
-    max-width: 42%;
     display: none;
   }
 }

@@ -76,11 +76,6 @@ footer {
                     transition: all 2s;    
                 } 
                 @media screen and (max-width: 400px) {
-                    @include container(flex, right);    
-                    left: 54%;
-                    top: -80px;
-                    bottom: 10.5em;
-                    max-width: 42%;
                     display: none;
                 }
                 @media screen and (min-width: 401px) and (max-width: 800px) {
