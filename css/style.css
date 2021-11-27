@@ -29,7 +29,6 @@
   color: #43be4d;
   display: flex;
   justify-content: center;
-  padding-top: 22px;
 }
 .registrarse .desta:hover, .containerContacto .tituloRegistro:hover, .containerContacto .desta:hover, .containerSomos .desta:hover, .containerProductos .desta:hover, .container .carousel .desta:hover {
   animation: changeColor 4s;
@@ -139,6 +138,19 @@ body {
 .container .carousel .propiedadesCar {
   border-radius: 20px;
 }
+.container .carousel .botonOfer {
+  background: #3bb145;
+  border-radius: 28px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 27px;
+  padding: 19px;
+  margin-top: 2%;
+}
+.container .carousel .botonOfer:hover {
+  background: #f39405;
+  color: black;
+}
 @media screen and (max-width: 400px) {
   .container {
     min-width: 100%;
@@ -204,6 +216,10 @@ body {
   font-weight: bold;
   font-size: 25px;
   text-align: center;
+  font-style: italic;
+}
+.grid-subida .archivo:hover {
+  color: #43be4d;
 }
 @media screen and (max-width: 400px) {
   .grid-subida .archivo {

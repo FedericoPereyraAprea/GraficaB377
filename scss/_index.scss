@@ -10,11 +10,24 @@
             font-style: italic;
             @media screen and (max-width: 400px) {
                 padding-top: 13%;   
-            }  
-        }
+            } 
+        } 
         .propiedadesCar {
             border-radius: 20px;
-        }     
+        }  
+        .botonOfer {
+            background: rgb(59, 177, 69);
+            border-radius: 28px;
+            color: white;
+            font-family: $fontFamily;
+            font-size: 27px;
+            padding: 19px;
+            margin-top: 2%;
+            &:hover {
+                background: #f39405;
+                color: black; 
+            }
+        }   
     }
     @media screen and (max-width: 400px) {
         @include mediaCarousel(100%, 13%);
@@ -64,6 +77,10 @@
         font-weight: bold;
         font-size: 25px;
         text-align: center;
+        font-style: italic;
+        &:hover {
+            color: $fontColorPrincipal;
+        }
         @media screen and (max-width: 400px) {
             margin-top: 72px;
             font-size: 12px;    
