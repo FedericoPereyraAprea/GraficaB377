@@ -15,6 +15,28 @@
     color: coral;
   }
 }
+@keyframes tituloPablo {
+  0% {
+    color: #e71010;
+  }
+  50% {
+    color: #160381;
+  }
+  100% {
+    color: #ee1010;
+  }
+}
+@keyframes tituloFede {
+  0% {
+    color: #0215c5;
+  }
+  50% {
+    color: #f3db04;
+  }
+  100% {
+    color: #0215c5;
+  }
+}
 .containerContacto .botonEnviarContacto, .containerContacto .botonArchivoContacto {
   border: 3px solid #28732e;
   font-size: 12px;
@@ -42,6 +64,8 @@
   font-size: 20px;
   text-align: justify;
   margin-right: 140px;
+  font-weight: bold;
+  font-style: italic;
 }
 @media screen and (max-width: 400px) {
   .containerSomos .contFede .divFede .infoFede, .containerSomos .contPablo .divInfoPablo .infoPablo {
@@ -267,7 +291,7 @@ body {
 }
 @media screen and (max-width: 400px) {
   .containerProductos .desta {
-    padding-top: 14%;
+    padding-top: 16%;
   }
 }
 @media screen and (min-width: 401px) and (max-width: 800px) {
@@ -275,18 +299,37 @@ body {
     padding-top: 50px;
   }
 }
-.containerProductos .productsContainer {
-  margin-left: 7vw;
+@media screen and (min-width: 801px) and (max-width: 1180px) {
+  .containerProductos .desta {
+    padding-top: 50px;
+  }
 }
-.containerProductos .productsContainer .tamaño {
-  display: inline;
-  max-width: 22%;
+.containerProductos .contenedorDeImagenes {
+  display: flex;
+  justify-content: center;
+}
+.containerProductos .contenedorDeImagenes .subContenedorImgs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 400px) {
+  .containerProductos .contenedorDeImagenes .subContenedorImgs {
+    flex-direction: row;
+  }
+}
+.containerProductos .contenedorDeImagenes .subContenedorImgs .imagenesA {
+  height: 400px;
+  width: 400px;
   margin-bottom: 1vw;
   margin-right: 1vw;
+}
+.containerProductos .contenedorDeImagenes .subContenedorImgs .imagenesA .tamaño {
+  max-width: 400px;
   border-radius: 10px;
   transition: all 1s;
 }
-.containerProductos .productsContainer .tamaño:hover {
+.containerProductos .contenedorDeImagenes .subContenedorImgs .imagenesA .tamaño:hover {
   transform: scale(1.2);
 }
 
@@ -318,6 +361,12 @@ body {
   font-size: 1.3em;
   text-align: justify;
   margin-right: 17%;
+  font-weight: bold;
+  font-style: italic;
+}
+.containerSomos .containerQuienes .quienesSomosDiv .infoGrafica:hover {
+  transform: scale(1.2);
+  transition: all 2s;
 }
 @media screen and (max-width: 400px) {
   .containerSomos .containerQuienes .quienesSomosDiv .infoGrafica {
@@ -353,6 +402,11 @@ body {
 }
 .containerSomos .containerQuienes .containerPuerta .quienesSomos {
   max-width: 90%;
+  border-radius: 5px;
+}
+.containerSomos .containerQuienes .containerPuerta .quienesSomos:hover {
+  transform: scale(1.2) translate(-55px, -25px);
+  transition: all 2s;
 }
 @media screen and (max-width: 400px) {
   .containerSomos .containerQuienes .containerPuerta .quienesSomos {
@@ -364,6 +418,9 @@ body {
   font-size: 35px;
   font-style: normal;
 }
+.containerSomos .nombrePablo:hover {
+  animation: tituloPablo 2s;
+}
 @media screen and (max-width: 400px) {
   .containerSomos .nombrePablo {
     font-size: 20px;
@@ -372,6 +429,15 @@ body {
 }
 .containerSomos .contPablo .divPablo .quienesSomos {
   max-width: 90%;
+  border-radius: 5px;
+}
+.containerSomos .contPablo .divPablo .quienesSomos:hover {
+  transform: scale(1.2) translateX(70px);
+  transition: all 2s;
+}
+.containerSomos .contPablo .divInfoPablo .infoPablo:hover {
+  transform: scale(1.2) translateX(-55px);
+  transition: all 2s;
 }
 @media screen and (max-width: 400px) {
   .containerSomos .contPablo .divInfoPablo .infoPablo {
@@ -391,6 +457,9 @@ body {
   margin-top: 15px;
   margin-right: 148px;
 }
+.containerSomos .nombreFede:hover {
+  animation: tituloFede 2s;
+}
 @media screen and (max-width: 400px) {
   .containerSomos .nombreFede {
     font-size: 15px;
@@ -403,6 +472,10 @@ body {
     font-size: 29px;
   }
 }
+.containerSomos .contFede .divFede .infoFede:hover {
+  transform: scale(1.2) translateX(55px);
+  transition: all 2s;
+}
 @media screen and (min-width: 401px) and (max-width: 800px) {
   .containerSomos .contFede .divFede .infoFede {
     margin-right: 37px;
@@ -410,7 +483,12 @@ body {
 }
 .containerSomos .contFede .divInfoFede .quienesSomos, .containerSomos .contFede .divInfoFede .fotoFede {
   max-width: 90%;
+  border-radius: 5px;
   margin-bottom: 20px;
+}
+.containerSomos .contFede .divInfoFede .quienesSomos:hover, .containerSomos .contFede .divInfoFede .fotoFede:hover {
+  transform: scale(1.2) translateX(-70px);
+  transition: all 2s;
 }
 
 .containerContacto {

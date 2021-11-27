@@ -26,6 +26,28 @@ $anchoQuienesSomosImg: 90%;
         color:coral
     }
 }
+@keyframes tituloPablo {
+    0% {
+        color:rgb(231, 16, 16);
+    }
+    50% {
+        color:rgb(22, 3, 129);
+    }
+    100% {
+        color:rgb(238, 16, 16)
+    }
+}
+@keyframes tituloFede {
+    0% {
+        color:rgb(2, 21, 197);
+    }
+    50% {
+        color:rgb(243, 219, 4);
+    }
+    100% {
+        color:rgb(2, 21, 197)
+    }
+}
 
 // Listas
 $colores:
@@ -73,7 +95,9 @@ red;
     color: $fontColorPrincipal;
     font-size: 20px;
     text-align: justify;
-    margin-right: 140px; 
+    margin-right: 140px;
+    font-weight: $fontWeight;
+    font-style: italic; 
     @media screen and (max-width: 400px) {
         font-size: 11px;
         margin: 0;

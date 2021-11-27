@@ -22,6 +22,12 @@
                 font-size: 1.3em;
                 text-align: justify;
                 margin-right: 17%;
+                font-weight: $fontWeight;
+                font-style: italic;
+                &:hover {
+                    transform: scale(1.2);
+                    transition: all 2s;    
+                }
                 @media screen and (max-width: 400px) {
                     display: none;         
                 }
@@ -49,6 +55,11 @@
         .containerPuerta {
             .quienesSomos {
                 max-width: $anchoQuienesSomosImg;
+                border-radius: 5px;
+                &:hover {
+                    transform: scale(1.2) translate(-55px, -25px);
+                    transition: all 2s;    
+                }
                 @media screen and (max-width: 400px) {
                     max-width: 97%;        
                 }
@@ -59,6 +70,9 @@
         color: $fontColorPrincipal;
         font-size: 35px;
         font-style: normal;
+        &:hover {
+            animation: tituloPablo 2s;
+        }
         @media screen and (max-width: 400px) {
             font-size: 20px;
             margin-top: 5px;
@@ -67,12 +81,21 @@
     .contPablo {
         .divPablo {
             .quienesSomos {
-                max-width: $anchoQuienesSomosImg;         
+                max-width: $anchoQuienesSomosImg;
+                border-radius: 5px;
+                &:hover {
+                    transform: scale(1.2) translateX(70px);
+                    transition: all 2s;    
+                }         
             }
         }
         .divInfoPablo {
             .infoPablo {
                 @extend %infoPersonas;
+                &:hover {
+                    transform: scale(1.2) translateX(-55px);
+                    transition: all 2s;    
+                }
                 @media screen and (max-width: 400px) {
                     margin-right: 15px;        
                 }
@@ -89,6 +112,9 @@
         text-align: right;
         margin-top: 15px;
         margin-right: 148px;
+        &:hover {
+            animation: tituloFede 2s;
+        }
         @media screen and (max-width: 400px) {
             font-size: 15px;
             margin-right: 19px;    
@@ -101,7 +127,11 @@
     .contFede {
         .divFede {
             .infoFede {
-                @extend %infoPersonas; 
+                @extend %infoPersonas;
+                &:hover {
+                    transform: scale(1.2) translateX(55px);
+                    transition: all 2s;    
+                } 
                 @media screen and (min-width: 401px) and (max-width: 800px) {
                     margin-right: 37px;
                 }  
@@ -110,7 +140,12 @@
         .divInfoFede {
             .quienesSomos, .fotoFede {
                 max-width: $anchoQuienesSomosImg;
+                border-radius: 5px;
                 margin-bottom: 20px; 
+                &:hover {
+                    transform: scale(1.2) translateX(-70px);
+                    transition: all 2s;    
+                }  
             }
         }
     }

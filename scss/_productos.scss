@@ -1,26 +1,41 @@
 .containerProductos {
-    margin-top: 7%; 
+    margin-top: 7%;
        .desta {
         @extend %tituloDestacado;
         @media screen and (max-width: 400px) {
-            padding-top: 14%;   
+            padding-top: 16%;   
         }
         @media screen and (min-width: 401px) and (max-width: 800px) {
             padding-top: 50px;
         }  
+        @media screen and (min-width: 801px) and (max-width: 1180px) {
+            padding-top: 50px;
+        } 
     } 
-    .productsContainer {
-        margin-left: 7vw;
-        .tamaño {
-            display: inline;
-            max-width: $anchoproductos;
-            margin-bottom: 1vw;
-            margin-right: 1vw;
-            border-radius: 10px;
-            transition: all 1s;
-            &:hover {
-                transform: scale(1.2);
-            }   
-        }
+    .contenedorDeImagenes {
+        display: flex;
+        justify-content: center;
+        .subContenedorImgs {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            @media screen and (max-width: 400px) {
+                flex-direction: row;   
+            }
+            .imagenesA {
+                height: 400px;
+                width: 400px;
+                margin-bottom: 1vw; 
+                margin-right: 1vw;
+                .tamaño {
+                    max-width: 400px;
+                    border-radius: 10px;
+                    transition: all 1s;
+                    &:hover { transform: scale(1.2);
+                    }
+                }
+            }
+        }       
+        
     }
 }
