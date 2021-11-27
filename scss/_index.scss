@@ -7,10 +7,13 @@
         max-width: 80%;
         .desta {
             @extend %tituloDestacado;
-            font-style: italic;
             @media screen and (max-width: 400px) {
-                padding-top: 13%;   
+                padding-top: 13%;
+                font-size: 22px;   
             } 
+            @media screen and (min-width: 401px) and (max-width: 800px) {
+                font-size: 29px;   
+            }
         } 
         .propiedadesCar {
             border-radius: 20px;
@@ -26,6 +29,14 @@
             &:hover {
                 background: #f39405;
                 color: black; 
+            }
+            @media screen and (max-width: 400px) {
+                font-size: 13px;
+                padding: 15px;
+            }
+            @media screen and (min-width: 401px) and (max-width: 800px) {
+                font-size: 15px;
+                padding: 10px;   
             }
         }   
     }

@@ -29,6 +29,9 @@
   color: #43be4d;
   display: flex;
   justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-style: italic;
 }
 .registrarse .desta:hover, .containerContacto .tituloRegistro:hover, .containerContacto .desta:hover, .containerSomos .desta:hover, .containerProductos .desta:hover, .container .carousel .desta:hover {
   animation: changeColor 4s;
@@ -127,12 +130,15 @@ body {
   z-index: 0;
   max-width: 80%;
 }
-.container .carousel .desta {
-  font-style: italic;
-}
 @media screen and (max-width: 400px) {
   .container .carousel .desta {
     padding-top: 13%;
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 800px) {
+  .container .carousel .desta {
+    font-size: 29px;
   }
 }
 .container .carousel .propiedadesCar {
@@ -150,6 +156,18 @@ body {
 .container .carousel .botonOfer:hover {
   background: #f39405;
   color: black;
+}
+@media screen and (max-width: 400px) {
+  .container .carousel .botonOfer {
+    font-size: 13px;
+    padding: 15px;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 800px) {
+  .container .carousel .botonOfer {
+    font-size: 15px;
+    padding: 10px;
+  }
 }
 @media screen and (max-width: 400px) {
   .container {
@@ -399,9 +417,6 @@ body {
   margin-top: 7%;
   display: grid;
   justify-content: center;
-}
-.containerContacto .tituloRegistro, .containerContacto .desta {
-  font-weight: bold;
 }
 @media screen and (max-width: 400px) {
   .containerContacto .tituloRegistro, .containerContacto .desta {

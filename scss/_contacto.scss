@@ -3,7 +3,6 @@
     display: grid;
     justify-content: center;  
     .tituloRegistro, .desta {
-        font-weight: $fontWeight;
         @extend %tituloDestacado;
         @media screen and (max-width: 400px) {
             padding-top: 25%;   
