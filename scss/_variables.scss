@@ -107,4 +107,9 @@ red;
     border: 2px solid darken($fontColorPrincipal, 20%);
     border-radius: 15px;
 }
+%textoProductos {
+    color: $fontColorPrincipal;
+    font-weight: $fontWeight; 
+    font-size: 25px;
+}
 

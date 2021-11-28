@@ -83,12 +83,25 @@
     </header> 
     <!-- Seccion -->
     <section class="infoProducto">
-        <img class="fotoProducto" src="../Multimedia/Fotos/promociontarjetamate.jpg" alt="Foto de las tarjetas mate">
-        <h1 class="textoProducto tituloProducto">Tarjetas opp mate offset 500 unidades</h1>
-        <p class="textoProducto precio">$950</p> 
-        <p class="textoProducto cantidad">Cantidad:</p> 
-        <p class="textoProducto comentario">Comentario:</p>
-        <button class="carrito">Añadir al carrito</button> 
+      <h1 class="tituloProducto">Tarjetas opp mate offset 500 unidades</h1>
+      <img class="fotoProducto" src="../Multimedia/Fotos/promociontarjetamate.jpg" alt="Foto de las tarjetas en mate">
+      <div class="conteinerProduct">
+        <p class="textoPrecio">$950</p>
+        <div class="cantDiv">
+          <p class="textoCantidad">Cantidad:</p>
+          <input class="cantInput" type="text" id="name" name="name" required size="10"> 
+        </div> 
+        <p class="textoComentario">Comentario:</p>
+        <input class="comentarioInput" type="text" id="name" name="name" required size="10">
+      </div>
+      <button class="carrito" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">Añadir al carrito</button>
+      <div style="min-height: 120px;" class="d-flex justify-content-center">
+        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+          <div class="card card-body cartelExito" style="width: 300px;">
+            ¡Producto añadido con éxito! 
+          </div>
+        </div> 
+      </div>
     </section>
     <!-- Footer -->
     <footer>

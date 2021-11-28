@@ -47,7 +47,7 @@
   background-color: #43be4d;
 }
 
-.registrarse .desta, .containerContacto .tituloRegistro, .containerContacto .desta, .containerSomos .desta, .containerProductos .desta, .container .carousel .desta {
+.infoProducto .tituloProducto, .registrarse .desta, .containerContacto .tituloRegistro, .containerContacto .desta, .containerSomos .desta, .containerProductos .desta, .container .carousel .desta {
   color: #43be4d;
   display: flex;
   justify-content: center;
@@ -55,7 +55,7 @@
   font-weight: bold;
   font-style: italic;
 }
-.registrarse .desta:hover, .containerContacto .tituloRegistro:hover, .containerContacto .desta:hover, .containerSomos .desta:hover, .containerProductos .desta:hover, .container .carousel .desta:hover {
+.infoProducto .tituloProducto:hover, .registrarse .desta:hover, .containerContacto .tituloRegistro:hover, .containerContacto .desta:hover, .containerSomos .desta:hover, .containerProductos .desta:hover, .container .carousel .desta:hover {
   animation: changeColor 4s;
 }
 
@@ -74,9 +74,15 @@
   }
 }
 
-.registrarse .inputsRegistro, .containerContacto .consultaInput, .containerContacto .inputs {
+.infoProducto .conteinerProduct .comentarioInput, .registrarse .inputsRegistro, .containerContacto .consultaInput, .containerContacto .inputs {
   border: 2px solid #28732e;
   border-radius: 15px;
+}
+
+.infoProducto .conteinerProduct .textoComentario, .infoProducto .conteinerProduct .cantDiv .textoCantidad, .infoProducto .conteinerProduct .textoPrecio {
+  color: #43be4d;
+  font-weight: bold;
+  font-size: 25px;
 }
 
 header {
@@ -582,34 +588,121 @@ body {
 .infoProducto {
   text-align: center;
 }
+.infoProducto .tituloProducto {
+  margin-top: 7%;
+  background-color: black;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 400px) {
+  .infoProducto {
+    margin-top: 25%;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 800px) {
+  .infoProducto {
+    margin-top: 15%;
+    margin-bottom: 5px;
+  }
+}
 .infoProducto .fotoProducto {
   max-width: 30%;
-  margin-top: 9%;
+  border-radius: 15px;
+  transition: all 0.2s;
+}
+.infoProducto .fotoProducto:hover {
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px 15px #43be4d;
 }
 @media screen and (max-width: 400px) {
   .infoProducto .fotoProducto {
-    margin-top: 25%;
     max-width: 70%;
   }
 }
 @media screen and (min-width: 401px) and (max-width: 800px) {
   .infoProducto .fotoProducto {
-    margin-top: 15%;
     max-width: 50%;
   }
 }
-.infoProducto .textoProducto {
-  color: #43be4d;
+.infoProducto .conteinerProduct .textoPrecio {
+  font-size: 50px;
 }
-.infoProducto .tituloProducto {
-  font-style: italic;
+.infoProducto .conteinerProduct .cantDiv {
+  display: flex;
+  justify-content: center;
 }
-.infoProducto p {
-  font-weight: bold;
-  font-size: 22px;
+.infoProducto .conteinerProduct .cantDiv .textoCantidad {
+  margin-right: 15px;
+}
+.infoProducto .conteinerProduct .cantDiv .cantInput {
+  width: 3vw;
+  height: 2vw;
+  border-radius: 5px;
+  border-color: #43be4d;
+  text-align: center;
+  font-size: 20px;
+}
+@media screen and (max-width: 400px) {
+  .infoProducto .conteinerProduct .cantDiv .cantInput {
+    margin-top: 4px;
+    width: 12vw;
+    height: 8vw;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 800px) {
+  .infoProducto .conteinerProduct .cantDiv .cantInput {
+    width: 6vw;
+    height: 4vw;
+  }
+}
+.infoProducto .conteinerProduct .textoComentario {
+  margin-bottom: 2px;
+}
+.infoProducto .conteinerProduct .comentarioInput {
+  width: 25vw;
+  height: 5vw;
+}
+@media screen and (max-width: 400px) {
+  .infoProducto .conteinerProduct .comentarioInput {
+    width: 49vw;
+    height: 15vw;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 800px) {
+  .infoProducto .conteinerProduct .comentarioInput {
+    width: 30vw;
+  }
 }
 .infoProducto .carrito {
+  width: 6.5vw;
+  height: 2vw;
+  margin-top: 20px;
   margin-bottom: 25px;
+  border-radius: 10px;
+  border-color: #43be4d;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+.infoProducto .carrito:hover {
+  background-color: #43be4d;
+  color: white;
+}
+@media screen and (max-width: 400px) {
+  .infoProducto .carrito {
+    width: 27vw;
+    height: 10vw;
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 800px) {
+  .infoProducto .carrito {
+    width: 15vw;
+    height: 5vw;
+  }
+}
+.infoProducto .cartelExito {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background-color: #43be4d;
 }
 
 footer {
