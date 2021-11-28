@@ -61,6 +61,13 @@
     grid-template-columns: repeat(2, 1fr);
     height: 40vh;
     align-items: center;
+    @media screen and (max-width: 400px) {
+        height: auto;
+        margin-left: auto;    
+    }
+    @media screen and (min-width: 401px) and (max-width: 800px) {
+       height: auto; 
+    }
     div {
         @include gridSub(grid, repeat (2,auto));
         row-gap: 10px;
@@ -107,13 +114,8 @@
         }
         @media screen and (min-width: 401px) and (max-width: 800px) {
             font-size: 15px;
+            margin-bottom: 0;
+            margin-top: 48px;
         }
-    }
-    @media screen and (max-width: 400px) {
-        height: auto;
-        margin-left: auto;    
-    }
-    @media screen and (min-width: 401px) and (max-width: 800px) {
-       height: auto; 
     }
 }
