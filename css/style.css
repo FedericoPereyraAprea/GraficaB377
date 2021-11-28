@@ -317,7 +317,7 @@ body {
 }
 @media screen and (min-width: 401px) and (max-width: 800px) {
   .containerProductos .desta {
-    padding-top: 50px;
+    padding-top: 60px;
   }
 }
 @media screen and (min-width: 801px) and (max-width: 1180px) {
@@ -404,6 +404,8 @@ body {
   font-size: 1.3em;
   text-align: justify;
   margin-right: 17%;
+  font-style: italic;
+  font-weight: bold;
 }
 @media screen and (max-width: 400px) {
   .containerSomos .containerQuienes .quienesSomosDiv .infoGraficaDos {
@@ -448,6 +450,12 @@ body {
     margin-top: 5px;
   }
 }
+@media screen and (min-width: 401px) and (max-width: 800px) {
+  .containerSomos .nombrePablo {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+}
 .containerSomos .contPablo .divPablo .quienesSomos {
   max-width: 90%;
   border-radius: 5px;
@@ -465,7 +473,14 @@ body {
     margin-right: 15px;
   }
 }
-@media screen and (min-width: 401px) and (max-width: 800px) {
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  .containerSomos .contPablo .divInfoPablo .infoPablo {
+    font-size: 13px;
+    margin: 0;
+    padding-right: 43px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
   .containerSomos .contPablo .divInfoPablo .infoPablo {
     margin-right: 37px;
   }
@@ -487,20 +502,33 @@ body {
     margin-right: 19px;
   }
 }
-@media screen and (min-width: 401px) and (max-width: 800px) {
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  .containerSomos .nombreFede {
+    font-size: 22px;
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
   .containerSomos .nombreFede {
     margin-right: 37px;
     font-size: 29px;
   }
 }
-.containerSomos .contFede .divFede .infoFede:hover {
-  transform: scale(1.2) translateX(55px);
-  transition: all 2s;
-}
-@media screen and (min-width: 401px) and (max-width: 800px) {
+@media screen and (min-width: 601px) and (max-width: 800px) {
   .containerSomos .contFede .divFede .infoFede {
     margin-right: 37px;
   }
+}
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  .containerSomos .contFede .divFede .infoFede {
+    font-size: 13px;
+    margin: 0;
+    padding-right: 22px;
+  }
+}
+.containerSomos .contFede .divFede .infoFede:hover {
+  transform: scale(1.2) translateX(55px);
+  transition: all 2s;
 }
 .containerSomos .contFede .divInfoFede .quienesSomos, .containerSomos .contFede .divInfoFede .fotoFede {
   max-width: 90%;
@@ -613,7 +641,13 @@ body {
     margin-top: 25%;
   }
 }
-@media screen and (min-width: 401px) and (max-width: 800px) {
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  .infoProducto {
+    margin-top: 22%;
+    margin-bottom: 5px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
   .infoProducto {
     margin-top: 15%;
     margin-bottom: 5px;
@@ -641,6 +675,11 @@ body {
 .infoProducto .conteinerProduct .textoPrecio {
   font-size: 50px;
 }
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  .infoProducto .conteinerProduct .textoPrecio {
+    font-size: 35px;
+  }
+}
 .infoProducto .conteinerProduct .cantDiv {
   display: flex;
   justify-content: center;
@@ -663,7 +702,14 @@ body {
     height: 8vw;
   }
 }
-@media screen and (min-width: 401px) and (max-width: 800px) {
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  .infoProducto .conteinerProduct .cantDiv .cantInput {
+    margin-top: 4px;
+    width: 10vw;
+    height: 6vw;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
   .infoProducto .conteinerProduct .cantDiv .cantInput {
     width: 6vw;
     height: 4vw;
@@ -682,7 +728,13 @@ body {
     height: 15vw;
   }
 }
-@media screen and (min-width: 401px) and (max-width: 800px) {
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  .infoProducto .conteinerProduct .comentarioInput {
+    width: 40vw;
+    height: 10vw;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
   .infoProducto .conteinerProduct .comentarioInput {
     width: 30vw;
   }
@@ -708,7 +760,13 @@ body {
     font-size: 12px;
   }
 }
-@media screen and (min-width: 401px) and (max-width: 800px) {
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  .infoProducto .carrito {
+    width: 35vw;
+    height: 8vw;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
   .infoProducto .carrito {
     width: 15vw;
     height: 5vw;
