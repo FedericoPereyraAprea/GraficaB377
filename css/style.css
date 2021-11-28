@@ -166,7 +166,14 @@ body {
     font-size: 22px;
   }
 }
-@media screen and (min-width: 401px) and (max-width: 800px) {
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  .container .carousel .desta {
+    font-size: 19px;
+    padding-top: 15%;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
   .container .carousel .desta {
     font-size: 29px;
   }
@@ -193,7 +200,13 @@ body {
     padding: 15px;
   }
 }
-@media screen and (min-width: 401px) and (max-width: 800px) {
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  .container .carousel .botonOfer {
+    font-size: 13px;
+    margin-top: 5px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
   .container .carousel .botonOfer {
     font-size: 15px;
     padding: 10px;
@@ -710,6 +723,12 @@ footer {
   background-image: url(../src/Multimedia/Fotos/fondofooter.png);
   padding-left: 35px;
 }
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 footer div {
   display: flex;
   justify-content: space-between;
@@ -733,6 +752,11 @@ footer div .graficaFooter {
     text-align: right;
   }
 }
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  footer div .graficaFooter {
+    margin-right: 0;
+  }
+}
 footer p {
   color: #43be4d;
   margin-top: 5px;
@@ -749,6 +773,11 @@ footer .footer-input {
 @media screen and (max-width: 400px) {
   footer .footer-input {
     width: 45vw;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  footer .footer-input {
+    width: 31vw;
   }
 }
 footer .enviarConsulta {
@@ -780,7 +809,14 @@ footer .finalFooter .horarios {
     top: -16px;
   }
 }
-@media screen and (min-width: 401px) and (max-width: 800px) {
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  footer .finalFooter .horarios {
+    margin-bottom: 0;
+    font-size: 10px;
+    margin-top: 43px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
   footer .finalFooter .horarios {
     font-size: 16px;
   }
@@ -788,6 +824,11 @@ footer .finalFooter .horarios {
 footer .finalFooter div {
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 400px) {
+  footer .finalFooter div {
+    max-width: 200px;
+  }
 }
 footer .finalFooter div .mapa {
   position: relative;
@@ -804,7 +845,13 @@ footer .finalFooter div .mapa:hover {
     display: none;
   }
 }
-@media screen and (min-width: 401px) and (max-width: 800px) {
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  footer .finalFooter div .mapa {
+    margin-right: 0;
+    left: 74%;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
   footer .finalFooter div .mapa {
     display: flex;
     justify-content: right;
@@ -824,14 +871,16 @@ footer .finalFooter div .direccion {
     margin: 0px;
   }
 }
-@media screen and (min-width: 401px) and (max-width: 800px) {
+@media screen and (min-width: 401px) and (max-width: 600px) {
   footer .finalFooter div .direccion {
-    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
   }
 }
-@media screen and (max-width: 400px) {
-  footer .finalFooter div {
-    max-width: 200px;
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  footer .finalFooter div .direccion {
+    font-size: 16px;
   }
 }
 
