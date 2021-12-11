@@ -1,3 +1,4 @@
+/* Inicio index */
 .container {
     margin-top: 7%;
     display: flex;
@@ -8,7 +9,7 @@
         .desta {
             @extend %tituloDestacado;
             @media screen and (max-width: 400px) {
-                padding-top: 13%;
+                padding-top: 16%;
                 font-size: 22px;   
             }
             @media screen and (min-width: 401px) and (max-width: 600px) {
@@ -22,7 +23,13 @@
         } 
         .propiedadesCar {
             border-radius: 20px;
-        }  
+        } 
+        .botonCarrousel {
+            @media screen and (max-width: 400px) {
+                max-height: 50%;
+                top: 23%;  
+            }  
+        } 
         .botonOfer {
             background: rgb(59, 177, 69);
             border-radius: 28px;
@@ -119,3 +126,4 @@
         }
     }
 }
+/* Fin index */

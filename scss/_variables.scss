@@ -1,20 +1,22 @@
-//tipografia
+/* Inicio de las variables */
+
+// tipografia
 $fontFamily: 'Roboto', sans-serif;
 $fontColorPrincipal: #43be4d;
 $fontColorSecundario: white;
 $fontWeight: bold;
 $fontstyle: italic;
 
-//Fondo
+// Fondo
 $bgImagePc: url(../src/Multimedia/fotos/fondografica.jpg);
 $bgImageTablet: url(../src/Multimedia/Fotos/fondograficatablet.jpg);
 $bgImageCel: url(../src/Multimedia/Fotos/fondograficacelular.jpg);
 
-//Imagenes
+// Imagenes
 $anchoproductos: 22%;
 $anchoQuienesSomosImg: 90%;
 
-//Efectos
+/* Efectos */
 @keyframes changeColor {
     0% {
         color:rgb(255, 1, 255);
@@ -56,7 +58,7 @@ white,
 cornflowerblue,
 red;
 
-//operaciones
+// operaciones 
 @mixin container($display, $justify) {
     display: $display;
     justify-content: $justify;
@@ -70,7 +72,7 @@ red;
     grid-template-rows: $temR;
 }
 
-// Extends
+/* Extends */
 %botonesContacto {
     border: 3px solid darken($fontColorPrincipal, 20%);
     font-size: 12px;
@@ -112,4 +114,4 @@ red;
     font-weight: $fontWeight; 
     font-size: 25px;
 }
-
+/* Fin de las variables */
