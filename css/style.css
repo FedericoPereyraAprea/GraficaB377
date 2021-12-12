@@ -845,6 +845,12 @@ footer {
   background-image: url(../src/Multimedia/Fotos/fondofooter.png);
   padding-left: 35px;
 }
+@media screen and (max-width: 500px) {
+  footer {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+}
 @media screen and (min-width: 501px) and (max-width: 600px) {
   footer {
     padding-left: 20px;
