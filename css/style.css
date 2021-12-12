@@ -41,13 +41,14 @@
 }
 /* Extends */
 .containerContacto .botonEnviarContacto, .containerContacto .botonArchivoContacto {
-  border: 3px solid #28732e;
+  border: 2px solid #185bd3;
   font-size: 12px;
   width: 80px;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 .containerContacto .botonEnviarContacto:hover, .containerContacto .botonArchivoContacto:hover {
   background-color: #43be4d;
+  color: white;
 }
 
 .infoProducto .tituloProducto, .registrarse .desta, .containerContacto .tituloRegistro, .containerContacto .desta, .containerSomos .desta, .containerProductos .desta, .container .carousel .desta {
