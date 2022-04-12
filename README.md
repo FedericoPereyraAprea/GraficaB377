@@ -2,7 +2,7 @@
 <h1 align="center">Hi 👋, I'm Federico Pereyra Aprea</h1>
 <h3 align="center">A passionate student for all this</h3>
 
-- 🔭 I’m currently working on **GraficaB377**
+- 🔭 I’m currently working on **GraficaB377**'s website
 
 - 🌱 I’m currently learning **Web development**
 
